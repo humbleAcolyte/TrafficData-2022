@@ -1,0 +1,22 @@
+@import '../../../styles/theme.scss';
+
+.DateInterval {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 450px;
+    height: 50px;
+}
+
+.DateIntevalField {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.DateIntevalInput {
+    width: 80%;
+}

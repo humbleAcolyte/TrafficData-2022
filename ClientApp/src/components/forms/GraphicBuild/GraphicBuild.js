@@ -10,26 +10,33 @@ const GraphicBuild = (props) => {
     
     return (
         <div className='GraphicBuild'>
-            <p className='text2'>Период:</p>
-            <DateInterval
-                date1={values.date1}
-                date2={values.date2}
-                onChange={(date1, date2) => setDates(date1, date2)}
-            />
-            <p className='text2'>Интервал:</p>
-            <TimeSelect 
-                hours={values.partHours}
-                minutes={values.partMinutes}
-                seconds={values.partSeconds}
-                onChange={(hours, minutes, seconds) => setTime(hours, minutes, seconds)}
-            />
-            <DirectionSelect
-                data={values.dirData}
-                dataKey={values.dirKey}
-                dataName={values.dirName}
-                defaultKey={values.dirValue}
-                onChange={(dirs) => setDirections(dirs)}
-            />
+            <div className='GraphBuildElement'>
+                <p className='text2'>Период:</p>
+                <DateInterval
+                    date1={values.date1}
+                    date2={values.date2}
+                    onChange={(date1, date2) => setDates(date1, date2)}
+                />
+            </div>
+            <div className='GraphBuildElement'>
+                <p className='text2'>Интервал:</p>
+                <TimeSelect 
+                    hours={values.partHours}
+                    minutes={values.partMinutes}
+                    seconds={values.partSeconds}
+                    onChange={(hours, minutes, seconds) => setTime(hours, minutes, seconds)}
+                />
+            </div>
+            <div className='GraphBuildElement'>
+                <p className='text2'>Направление: </p>
+                <DirectionSelect
+                    data={values.dirData}
+                    dataKey={values.dirKey}
+                    dataName={values.dirName}
+                    defaultKey={values.dirValue}
+                    onChange={(dirs) => setDirections(dirs)}
+                />
+            </div>
             <Button onClick={() => sendData()}>Построить</Button>
         </div>
     );

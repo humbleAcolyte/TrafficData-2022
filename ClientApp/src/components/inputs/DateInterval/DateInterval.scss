@@ -3,20 +3,26 @@
 .DateInterval {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: baseline;
     align-items: center;
 
-    width: 450px;
-    height: 50px;
+    width: 100%;
+    height: fit-content;
 }
 
 .DateIntevalField {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: baseline;
     align-items: center;
+
+    margin: 5px 16px;
+
+    p {
+        margin-right: 10px;
+    }
 }
 
 .DateIntevalInput {
-    width: 80%;
+    width: 190px;
 }

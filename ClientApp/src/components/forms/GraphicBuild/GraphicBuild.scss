@@ -3,11 +3,29 @@
 .GraphicBuild {
     @extend .block;
 
-    width: 90%;
+    width: 98%;
     height: 10%;
+    min-height: 100px;
+    max-height: 400px;
 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+
+    flex-wrap: nowrap;
+}
+
+.GraphBuildElement {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+
+    width: 100%;
+    min-width: fit-content;
+
+    p {
+        margin: 16px;
+    }
 }

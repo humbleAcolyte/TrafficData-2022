@@ -1,0 +1,13 @@
+@import '../../../styles/theme.scss';
+
+.Button {
+    background-color: #951515;
+
+    border: 0;
+    border-radius: 4px;
+}
+
+.btn-text {
+    @extend .text;
+    color: #ffffff;
+}

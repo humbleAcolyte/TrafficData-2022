@@ -3,8 +3,8 @@ import WidgetDatePicker from 'react-widgets/DatePicker';
 import 'react-widgets/scss/styles.scss';
 import './DateInterval.scss';
 
-const DateInterval = () => {
-    const {date1, date2, moveDate1, moveDate2, getInterval} = useDateInterval();
+const DateInterval = (props) => {
+    const {date1, date2, moveDate1, moveDate2} = useDateInterval(props);
 
     return (
         <div className='DateInterval'>

@@ -26,8 +26,7 @@ const useDateInterval = (props) => {
         date1,
         date2,
         moveDate1,
-        moveDate2,
-        getInterval
+        moveDate2
     };
 };
 

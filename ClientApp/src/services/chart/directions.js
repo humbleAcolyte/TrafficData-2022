@@ -1,7 +1,9 @@
 const directions = [
     {id: 0, direction: 'Направление 1'},
     {id: 1, direction: 'Направление 2'},
-    {id: 2, direction: 'Направление 3'}
+    {id: 2, direction: 'Направление 3'},
+    {id: 3, direction: 'Направление 4'},
+    {id: 4, direction: 'Направление 5'}
 ];
 
 const maxAvrgSpeed = 50;
@@ -22,7 +24,7 @@ function avrgSpeedDirections(paramsJson) {
     const intervalTime = (endDate - startDate) / 1000; // time interval in seconds
     const partition = params['partition']['hours'] * 3600 +
                     params['partition']['minutes'] * 60 + params['partition']['seconds']; // time partition in seconds
-    const dotsCount = Math.floor(intervalTime / partition);
+    const dotsCount = Math.ceil(intervalTime / partition);
     const directions = params['directions'];
 
     const data = directions.map((direction) => {

@@ -16,8 +16,8 @@ const useAvrgSpeedChart = (props) => {
     let directionKey = 'id';
     let directionName = 'direction';
 
-    let startDate = new Date();
-    let endDate = new Date();
+    let startDate = initStartDate();
+    let endDate = initEndDate(startDate);
 
     let hours = 1;
     let minutes = 0;
@@ -25,6 +25,18 @@ const useAvrgSpeedChart = (props) => {
 
     const speedData = [];
     const [formatSpeedData, setFormatSpeedData] = useState(speedData);
+
+    function initStartDate() {
+        const date = new Date();
+        date.setSeconds(0, 0);
+        return date;
+    } 
+
+    function initEndDate(date1) {
+        const date = new Date();
+        date.setTime(date1.getTime() + (2*3600*1000));
+        return date;
+    }
 
     function changeSettings(settings) {
         const speedData = getSpeedDataHandler(settings);

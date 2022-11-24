@@ -1,6 +1,6 @@
 @import '../../../styles/theme.scss';
 
-.GraphicBuild {
+.avrg-speed-settings-wrapper {
     @extend .block;
 
     width: 98%;
@@ -16,7 +16,7 @@
     flex-wrap: nowrap;
 }
 
-.GraphBuildElement {
+.avrg-speed-settings-elem {
     display: flex;
     flex-direction: row;
     justify-content: baseline;
@@ -28,4 +28,16 @@
     p {
         margin: 16px;
     }
+}
+
+.avrg-speed-settings-period {
+    @extend .avrg-speed-settings-elem;
+}
+
+.avrg-speed-settings-dates {
+    @extend .avrg-speed-settings-elem;
+}
+
+.avrg-speed-settings-directions {
+    @extend .avrg-speed-settings-elem;
 }

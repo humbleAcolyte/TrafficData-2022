@@ -39,14 +39,14 @@ const AvrgSpeedChart = (props) => {
                     axisRight={null}
                     axisBottom={{
                         orient: 'bottom',
-                        tickSize: 5,
-                        tickPadding: 5,
+                        tickSize: 0,
+                        tickPadding: 20,
                         tickRotation: 0
                     }}
                     axisLeft={{
                         orient: 'left',
-                        tickSize: 5,
-                        tickPadding: 5,
+                        tickSize: 0,
+                        tickPadding: 20,
                         tickRotation: 0
                     }}
                     enableGridX={false}

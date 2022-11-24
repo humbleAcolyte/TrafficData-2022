@@ -9,7 +9,7 @@ const useAvrgSpeedChartSettings = (props) => {
     let directions = props.directions;
     let dirKey = props.directionKey;
     let dirName = props.directionName;
-    let dirAct = props.defaultDirections.map((key) => findDirectionByKey(key));
+    let dirAct = [];
 
     const submitHandler = props.onSubmit;
 

@@ -9,7 +9,7 @@ const DateInterval = (props) => {
     return (
         <div className='date-interval-wrapper'>
             <div className='date-interval-field'>
-                <p className='text2'>с</p>
+                <p className='text1'>с</p>
                 <WidgetDatePicker
                     className='date-interval-input'
                     value={date1}
@@ -18,7 +18,7 @@ const DateInterval = (props) => {
                 />
             </div>
             <div className='date-interval-field'>
-                <p className='text2'>до</p>
+                <p className='text1'>до</p>
                 <WidgetDatePicker
                     className='date-interval-input'
                     value={date2}

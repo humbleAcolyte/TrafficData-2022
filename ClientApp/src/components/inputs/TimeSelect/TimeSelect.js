@@ -16,7 +16,7 @@ const TimeSelect = (props) => {
                         onChange={(value) => setHours(value)}
                     />
                 </div>
-                <p className='text2'>ч.</p>
+                <p className='text1'>ч.</p>
             </div>
             <div className='time-select-field'>
                 <div className='time-select-input'>
@@ -26,7 +26,7 @@ const TimeSelect = (props) => {
                         onChange={(value) => setMinutes(value)}
                     />
                 </div>
-                <p className='text2'>м.</p>
+                <p className='text1'>м.</p>
             </div>
             <div className='time-select-field'>
                 <div className='time-select-input'>
@@ -36,7 +36,7 @@ const TimeSelect = (props) => {
                         onChange={(value) => setSeconds(value)}
                     />
                 </div>
-                <p className='text2'>с.</p>
+                <p className='text1'>с.</p>
             </div>
         </div>
     );

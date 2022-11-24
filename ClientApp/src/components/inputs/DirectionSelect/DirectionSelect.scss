@@ -1,7 +1,6 @@
 @import '../../../styles/theme.scss';
 
-.DirectionSelect {
-    width: 100%;
-    min-width: 100px;
-    max-width: 200px;
+.direction-select {
+    display: inline-block;
+    width: 200px;
 }

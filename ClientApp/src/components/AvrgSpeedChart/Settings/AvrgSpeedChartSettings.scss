@@ -4,30 +4,24 @@
     @extend .block;
 
     width: 98%;
-    height: 10%;
+    height: fit-content;
     min-height: 100px;
-    max-height: 400px;
 
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
-    flex-wrap: nowrap;
 }
 
 .avrg-speed-settings-elem {
-    display: flex;
-    flex-direction: row;
-    justify-content: baseline;
-    align-items: center;
+    display: inline-block;
 
-    width: 100%;
-    min-width: fit-content;
-
-    p {
-        margin: 16px;
+    .avrg-speed-settings-label {
+        display: inline-block;
+        margin-right: 28px;
     }
+
+    height: fit-content;
 }
 
 .avrg-speed-settings-period {

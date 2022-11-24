@@ -1,28 +1,21 @@
 @import '../../../styles/theme.scss';
 
-.DateInterval {
-    display: flex;
-    flex-direction: row;
-    justify-content: baseline;
-    align-items: center;
-
-    width: 100%;
-    height: fit-content;
+.date-interval-wrapper {
+    display: inline-block;
 }
 
-.DateIntevalField {
-    display: flex;
-    flex-direction: row;
-    justify-content: baseline;
-    align-items: center;
+.date-interval-field {
+    display: inline-block;
 
-    margin: 5px 16px;
+    margin: 5px 10px;
 
     p {
-        margin-right: 10px;
+        display: inline-block;
+        margin-right: 16px;
     }
 }
 
-.DateIntevalInput {
+.date-interval-input {
+    display: inline-block;
     width: 190px;
 }

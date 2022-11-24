@@ -7,18 +7,20 @@ const DateInterval = (props) => {
     const {date1, date2, moveDate1, moveDate2} = useDateInterval(props);
 
     return (
-        <div className='DateInterval'>
-            <div className='DateIntevalField'>
+        <div className='date-interval-wrapper'>
+            <div className='date-interval-field'>
                 <p className='text2'>с</p>
-                <WidgetDatePicker className='DateIntevalInput'
+                <WidgetDatePicker
+                    className='date-interval-input'
                     value={date1}
                     onChange={value => moveDate1(value)}
                     includeTime
                 />
             </div>
-            <div className='DateIntevalField'>
+            <div className='date-interval-field'>
                 <p className='text2'>до</p>
-                <WidgetDatePicker className='DateIntevalInput'
+                <WidgetDatePicker
+                    className='date-interval-input'
                     value={date2}
                     onChange={value => moveDate2(value)}
                     includeTime

@@ -8,7 +8,8 @@ const DirectionSelect = (props) => {
 
     return (
         <Multiselect 
-            className='DirectionSelect'
+            className='direction-select'
+            containerClassName='direction-select-input'
             data={data}
             dataKey={dataKey}
             textField={dataName}

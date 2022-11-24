@@ -1,24 +1,21 @@
 @import '../../../styles/theme.scss';
 
-.timeSelector {
-    display: flex;
-    flex-direction: row;
-    justify-content: baseline;
-    align-items: center;
-
-    width: 100%;
-    height: fit-content;
+.time-select-wrapper {
+    display: inline-block;
 }
 
-.timeField {
-    display: flex;
-    flex-direction: row;
-    justify-content: baseline;
-    align-items: center;
+.time-select-field {
+    display: inline-block;
 
-    margin: 5px 0px;
+    margin: 5px 4px;
 
     p {
-        margin: 5px 0px 5px 2px;
+        display: inline-block;
+        margin-left: 4px;
     }
+}
+
+.time-select-input {
+    display: inline-block;
+    width: 80px;
 }

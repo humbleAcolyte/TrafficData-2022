@@ -11,7 +11,7 @@ const AvrgSpeedChartSettings = (props) => {
     return (
         <div className='avrg-speed-settings-wrapper'>
             <div className='avrg-speed-settings-period'>
-                <p className='text2'>Период:</p>
+                <p className='text2 avrg-speed-settings-label'>Период:</p>
                 <DateInterval
                     date1={date.startDate}
                     date2={date.endDate}
@@ -19,7 +19,7 @@ const AvrgSpeedChartSettings = (props) => {
                 />
             </div>
             <div className='avrg-speed-settings-dates'>
-                <p className='text2'>Интервал:</p>
+                <p className='text2 avrg-speed-settings-label'>Интервал:</p>
                 <TimeSelect 
                     hours={partition.hours}
                     minutes={partition.minutes}
@@ -28,7 +28,7 @@ const AvrgSpeedChartSettings = (props) => {
                 />
             </div>
             <div className='avrg-speed-settings-directions'>
-                <p className='text2'>Направление: </p>
+                <p className='text2 avrg-speed-settings-label'>Направление: </p>
                 <DirectionSelect
                     data={direction.directions}
                     dataKey={direction.dirKey}

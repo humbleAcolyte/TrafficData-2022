@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@nivo/core": "^0.80.0",
+    "@nivo/line": "^0.80.0",
     "bootstrap": "^5.2.0",
     "http-proxy-middleware": "^2.0.6",
     "jquery": "^3.6.0",
